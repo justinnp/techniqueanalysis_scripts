@@ -64,9 +64,9 @@ for frame_set in zippy:
             stitched_frames.append(stitched)
         # otherwise the stitching failed, likely due to not enough keypoints)
         # being detected
-        else:
-            print('[INFO] frame ' + str(counter) +  " stitching failed ({})".format(status))
-        counter+=1
+    else:
+        print('[INFO] frame ' + str(counter) +  " stitching failed ({})".format(status))
+    counter+=1
 print('Stitching has been completed.')
 ############ CREATE VIDEO ######################
 print('Starting video creation')
